@@ -1,128 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>
-        Talk Bot
-    </title>
-    <style>
-        body {
-            background: rgb(1, 13, 17) url("Black-Background.jpg") no-repeat fixed center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        *{
-            box-sizing: border-box;
-        }
-        .container
-        {
-            position: relative;
-            border-radius: 5px;
-            background-color: lightcyan;
-            color: black;
-            padding: 50px 0 40px 0;
-            margin: 15% auto;
-        }
-        input,
-        .btn{
-            width: 100%;
-            padding: 12px;
-            border: radius 4px;
-            margin: 5px 0;
-            opacity: 0.85;
-            display: inline-block;
-            font-size: 17px;
-        }
-        input:hover,
-        .btn:hover {
-            opacity: 1;
-        }
-         .correctLabel {
-             vertical-align: middle;
-          }
-          .connectInput {
-            width: 13px;
-            height: 13px;
-            padding: 0;
-            margin:0;
-            vertical-align: bottom;
-            position: relative;
-            top: -1px;
-            *overflow: hidden;
-          }
-        input[type=submit]
-        {
-            background-color: black;
-            color: white;
-            cursor: pointer;
-        }
-        .col1
-        {
-            float: center;
-            width: 50%;
-            margin: auto;
-            padding: 0 50px;
-            margin-top: 6px;
 
-        }
-        .row::after
-        {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        .hide-md-lg
-        {
-            display: none;
-        }
-        @media screen and (max-width: 440px) {
-            .col
-            {
-                width: 100%;
-                margin-top: 0;
-            }
-            .vl{
-                display: none;
-            }
-            .hide-md-lg{
-                display: block;
-                text-align: center;
-            }
-        }
-    </style>
+<head>
+  <title>
+    Talk Bot
+  </title>
+  <link rel="stylesheet" href="css/registerform.css">
 </head>
+
 <body>
-    <center>
+  <center>
     <div class="container">
-        <form action="/action_page.php">
-          <div class="row">
-            <h2 style="text-align:center">Register</h2>
-            <div class="vl">
-            </div>
-            <div class="col1">
-              <div class="hide-md-lg">
-              </div>
-              <input type="text" name="username" placeholder="Username">
-              <input type="text" name="email" placeholder="Email">
-              <input type="password" name="password" placeholder="Password">
-              <input type="password" name="verify_password" placeholder="Confirm Password">
-              <br>
-              <form>
-                <div >
-                        <label class="correctLabel"><input class="connectInput" type="checkbox"> I Agree at our <a href="SubpagesTermsConditions.html" style="color: darkblue;"> Terms and Conditions</a></label>
-                </div>
-             </form>
-            <form>
-                <input formaction="MainPage.html" type="submit" value="Register">
-            </form>
-            </div>
-            <div >
-                <div class="row">
-                    <p style="text-align:center">I already have an account bring me back at <a href="LoginForm.html" style="color: darkblue;">Sign in</a></p>
-                  </div>
-                </div>
-              </div>
+      <form action="">
+        <div class="row">
+          <h2 style="text-align:center">Register</h2>
+          <div class="vl">
           </div>
-        </form>
+          <div class="col1">
+            <div class="hide-md-lg">
+            </div>
+            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="verify_password" placeholder="Confirm Password">
+            <br>
+            <form>
+              <div>
+                <label class="correctLabel"><input class="connectInput" type="checkbox"> I Agree at our <a href="SubpageTermsandConditions.html" style="color: darkblue;"> Terms and Conditions</a></label>
+              </div>
+            </form>
+            <form>
+              <input formaction="MainPage.html" type="submit" value="Register">
+            </form>
+          </div>
+          <div>
+            <div class="row">
+              <p style="text-align:center">I already have an account bring me back at <a href="index.html" style="color: darkblue;">Sign in</a></p>
+            </div>
+          </div>
+        </div>
     </div>
-    </center>
+    </form>
+    </div>
+  </center>
 </body>
+
 </html>
