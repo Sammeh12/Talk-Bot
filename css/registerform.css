@@ -1,5 +1,5 @@
 body {
-  background: rgb(1, 13, 17) url("Black-Background.jpg") no-repeat fixed center;
+  background: rgb(1, 13, 17) url("/images/Black-Background.jpg") no-repeat fixed center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 * {
